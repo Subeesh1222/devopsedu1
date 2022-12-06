@@ -1,4 +1,4 @@
-stateofweb=$(sudo docker container inspect --format "{{.State.Status}}" phpwebsite2)
+stateofweb=$(sudo docker container inspect --format "{{.State.Status}}" phpwebsite)
 if [[ $stateofweb  != 'running' ]] ;then
         rm -rf phpwebsite
 else
